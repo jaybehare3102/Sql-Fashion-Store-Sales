@@ -12,7 +12,7 @@ select* from sales;
 -- find total no of customers 
    select 	count(*)  from customers;
 
--- finding no fo products available
+-- finding no of products available
    select count(no_products)
    from (select  distinct(product_name) as no_products
    from products) t;
